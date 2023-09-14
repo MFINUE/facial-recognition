@@ -3,22 +3,32 @@
      <h1>Niepce</h1>
 </div>
 
-## Usage:
-- Create a images directory where you will put your images Ex: `.\images`
-- Create a keys directory where your photo keys will be stored Ex: `.\keys`. For each person don't forget create a new sub-directory
- 
-- Now the new directory tree shold be looking like this:
-   ```
-    .
-    ├───images
-    |   └───...
-    └───keys
-        ├───person1
-        |   └───...
-        └───person2
-            └───...
-    
-    ```
+A util to identify, to distinguish, and to tag each photo taken during [the MFINUE Conference](https://mfinue.org).
+## Usage
 
-- You may go ahead and run the script by using `python . .\images --keys .\keys`
-- This will produce an `.\out` folder with the pictures of each person
+Create two folders at the root of of the project: 
+
+- `images` should hold all the input images whose faces will be tagged
+- `keys` should serve as a parent directory to your key images. Each key image should be a distinct folder and contain at least one picture of that person's face<br>
+ 
+Now the new directory tree shold be looking like this:
+```
+📂 niepce
+ ├─── 📂 images
+ |    └─── 📷 image1.png
+ └─── 📂 keys
+      ├─── 📂 person1
+      |    ├─── 📷 key1.png
+      |    └─── 📷 key2.png
+      └───📂 person2
+          └───...
+```
+
+Run the following command to execute the script
+
+```sh
+$ python . ./images --keys ./keys
+```
+
+
+The results should appear in a freshly created folder `out`
