@@ -20,5 +20,5 @@
     
     ```
 
-- You may go ahead and run the script by using `python main.py .\images --keys .\keys`
+- You may go ahead and run the script by using `python . .\images --keys .\keys`
 - This will produce an `.\out` folder with the pictures of each person
