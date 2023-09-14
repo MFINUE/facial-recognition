@@ -2,6 +2,6 @@ out/
 keys/
 images/
 __pycache__/
-
+.vscode/
 
 test.py
